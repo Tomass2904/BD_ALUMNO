@@ -1,0 +1,29 @@
+select * from alumnos join ciudad on alum_ciud_id = ciud_id
+select alum_nombre, alum_apellido, alum_edad, alum_id, PROV_ID,PAIS_ID from alumnos 
+join ciudad on alum_ciud_id = ciud_id
+join provincia on ciud_prov_id = prov_id
+join pais on prov_pais_id = pais_id
+where pais_nombre = 'URUGUAY'
+update provincia set prov_pais_id = 18 where prov_id in (2)
+select * from provincia
+
+
+SELECT * FROM ALUMNOS
+SELECT * FROM ciudad
+
+insert into provincia (prov_nombre, prov_pais_id) values ('Buenos Aires', 1)
+insert into ciudad (ciud_nombre, ciud_cod_postal, ciud_prov_id) values ('Buenos Aires',1406, 9)
+alter table provincia add column  int default 0
+update alumnos set alum_ciud_id = 9 where alum_id in (11) 
+
+delete from provincia where prov_id = 8
+i
+
+select alum_nombre, alum_apellido, dni from alumnos
+join ciudad on alum_ciud_id = ciud_id
+where ciud_nombre = 'GUALEGUAY'
+
+
+select alum_nombre, alum_apellido, alum_edad from alumnos
+join ciudad on alum_ciud_id = ciud_id
+where ciud_nombre = 'Buenos Aires'
