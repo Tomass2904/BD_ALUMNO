@@ -1,0 +1,18 @@
+insert into alumnos (alum_nombre, alum_apellido, alum_edad, alum_ciud_id) values ('TOMAS','GIACHELLO',17,1 ),('MARCOS','ZOTELO',18,1), ('ARAMIS', 'TERZA', 18,1), ('MATEO', 'BARELLO', 17,1), ('JEREMIAS','LEMES',18,1), ('VALENTIN','FUENTES', 17,1), ('MARIA', 'AGUILAR', 19,1), ('ALEJANDRA', 'RODRIGUEZ', 54,1), ('JEREMIAS', 'VAZQUES', 31,1), ('PENELOPE', 'BENTANCOURT', 18,1)
+
+
+
+insert into pais (pais_nombre) values ('ARGENTINA'), ('URUGUAY'), ('PARAGUAY'), ('ESPAÑA');
+SELECT * from PROVINCIA
+
+insert into provincia (prov_nombre, prov_pais_id) values ('ENTRE RIOS', 1), ('MONTEVIDEO', 2), ('BOQUERON', 3 ), ('CATALUÑA', 4) , ('BUENOS AIRES', 1), ('CONCEPCION',3);
+
+insert into ciudad (ciud_nombre, ciud_cod_postal, ciud_prov_id) values ('GUALEGUAYCHU' ,2820, 1), ('PALERMO',11200, 2), ('GENERAL EUGENIO A. GARAY ',5320, 3), ('LERIDA',25001, 4), ('PARANA', 3100, 1), ('FEDERACION', 3206, 1);
+select alum_nombre, alum_apellido from alumnos
+where alum_nombre='TOMAS'
+
+
+
+
+insert into pais (pais_nombre) values ('ALEMANIA')
+select * from pais
