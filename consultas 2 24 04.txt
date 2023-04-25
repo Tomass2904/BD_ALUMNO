@@ -1,0 +1,19 @@
+1)
+select empl_nombre. empl_apellido from empleados
+where empl_nombre like 'c%'
+order by ampl_nombre
+
+2) 
+select empleados.* from empleados
+inner join empresas on empr_id = empl_empr_id
+where (empr_nombre like 'ROCA SRL') or (empr_nombre like 'MICHELLIN')
+ORDER BY empl_nombre, empl_apellido 
+
+
+3) select * from empleados 
+where empl_sueldo between 20000 and 30000
+order by empl_apellido, empl_sueldo
+
+
+4) select empleados.* from empleados
+inner join empresas 
