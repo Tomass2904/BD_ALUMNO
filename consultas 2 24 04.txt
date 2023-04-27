@@ -16,4 +16,5 @@ order by empl_apellido, empl_sueldo
 
 
 4) select empleados.* from empleados
-inner join empresas 
+inner join empresas on empr_id = empl_empr_id
+where empl_sueldo <= 50000 and empl_rubro like 'agricultura'
