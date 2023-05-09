@@ -1,0 +1,29 @@
+create table peliculas(
+peli_id int identity (1,1) not null primary key,
+peli_titulo varchar (255) not null
+)
+
+create table proyecciones(
+proy_id int identity (1,1) not null primary key,
+proy_sala_id int not null,
+proy_pelicula_id int not null,
+proy_precio float not null
+)
+
+create table salas(
+sala_id int identity (1,1)  not null primary key,
+sala_piso int not null,
+sala_capacidad int not null,
+sala_numero int not null
+)
+
+create table genero (
+gene_id int identity (1,1) not null primary key,
+gene_nombre varchar (255)
+)
+
+create table peliculas_genero(
+pege_id int identity (1,1) not null primary key,
+pege_gene_id int not null,
+pege_peli_id int not null
+)
