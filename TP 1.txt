@@ -27,3 +27,161 @@ pege_id int identity (1,1) not null primary key,
 pege_gene_id int not null,
 pege_peli_id int not null
 )
+
+create procedure SP_insertar_peliculas(
+@nombre varchar (255) 
+)
+as 
+begin
+insert into peliculas(peli_titulo) values(@nombre)
+end
+exec SP_insertar_peliculas 'Juegos de niños'
+
+create procedure SP_insertar_proyecciones(
+@sala varchar (255), 
+@pelicula varchar (255),
+@precio float
+)
+as 
+begin
+insert into proyecciones(proy_sala_id,proy_pelicula_id, proy_precio) values(@sala, @pelicula, @precio)
+end
+
+create procedure SP_insertar_salas(
+@piso int,
+@capacidad int,
+@numero int
+)
+as
+begin
+insert salas(sala_piso,sala_capacidad,sala_numero)values(@piso, @capacidad, @numero)
+end
+exec SP_insertar_salas 2, 100, 3
+select * from salas
+
+create procedure SP_insertar_genero(
+@nombre varchar (255)
+)
+as
+begin
+insert genero(gene_nombre)values(@nombre)
+end
+exec SP_insertar_genero 'drama'
+select * from genero
+
+create procedure SP_obtener_peliculas(
+@id int
+)
+as
+begin
+select * from peliculas
+end
+
+create procedure SP_obtener_pelicula(
+@id int
+)
+as
+begin
+select * from peliculas where peli_id = @id
+end
+
+create procedure SP_obtener_proyecciones
+as
+begin
+select * from proyecciones
+end
+
+create procedure SP_obtener_proyeccion(
+@id int
+)
+as
+begin
+select * from proyecciones where proy_id = @id
+end
+
+create procedure SP_obtener_salas
+as
+begin
+select * from salas
+end
+
+create procedure SP_obtener_sala(
+@id int
+)
+as
+begin
+select * from salas where sala_id = @id
+end
+
+create procedure SP_obtener_generos
+as
+begin
+select * from genero
+end
+
+create procedure SP_obtener_genero(
+@id int
+)
+as
+begin
+select * from genero where gene_id = @id 
+end
+
+create procedure sp_actualizar_peliculas(
+@id int,
+@nombre varchar (255)
+)
+as 
+begin
+update peliculas
+set 
+	peli_titulo=@nombre
+	where  peli_id = @id
+end
+
+
+create procedure sp_actualizar_proyecciones(
+@id int,
+@sala varchar (255),
+@pelicula varchar (255),
+@precio float
+)
+as 
+begin
+update proyecciones
+set 
+	proy_sala_id=@sala,
+	proy_pelicula_id=@pelicula,
+	proy_precio = @precio
+	where  proy_id = @id
+end
+
+
+create procedure sp_actualizar_salas(
+@id int,
+@piso int,
+@capacidad int,
+@numero int
+)
+as 
+begin
+update salas
+set 
+	sala_piso= @piso,
+	sala_numero=@numero,
+	sala_capacidad = @capacidad
+	where  sala_id = @id
+end
+
+
+create procedure sp_actualizar_genero(
+@id int,
+@nombre varchar (255)
+)
+as 
+begin
+update genero
+set 
+	gene_nombre=@nombre
+	where  gene_id = @id
+end
