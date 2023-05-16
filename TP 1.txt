@@ -185,3 +185,74 @@ set
 	gene_nombre=@nombre
 	where  gene_id = @id
 end
+create procedure sp_borrar_peliculas(
+@id int
+)
+as 
+begin
+delete from peliculas where peli_id =@id
+end
+
+create procedure sp_borrar_proyecciones(
+@id int
+)
+as 
+begin
+delete from proyecciones where proy_id =@id
+end
+
+create procedure sp_borrar_salas(
+@id int
+)
+as 
+begin
+delete from salas where sala_id =@id
+end
+
+create procedure sp_borrar_genero(
+@id int
+)
+as 
+begin
+delete from genero where gene_id =@id
+end
+
+exec SP_insertar_peliculas   'Avatar 2', 'Eternal', 'Rambo', 'Spider-Man', 'Kick-Ass 2', 'Kick-Ass', 'Black Adam', 'Thor', 'DeadPool', 'Deadpool 2', 'Las aventuras de Shark boy y Lava girl', 'Rapidos y Furiosos reto tokio', 'Rapidos y Furisos 7', 'Rapidos y Furiosos 8', 'Rapidos y furiosos 10', 'Rapidos y Furiosos 6'
+
+
+insert into peliculas (peli_titulo) values ('Rapidos y Furisos 7'), ('Rapidos y Furiosos 8'), ('Rapidos y furiosos 10'), ('Rapidos y Furiosos 6')
+insert into peliculas (peli_titulo) values ('Tortujas Ninja'), ('Palmer'), ('Aquaman'), ('Rapidos y Furiosos 9'), ('Avatar 2'), ('Eternal'), ('Rambo'), ('Spider-Man'), ('Kick-Ass 2'), ('Kick-Ass'), ('Black Adam'), ('Thor'), ('DeadPool'), ('DeadPool 2'), ('Las aventuras de Shark boy y Lava girl'), ('Rapidos y Furisoso reto tokio') 
+
+insert into genero (gene_nombre) values ('Comedia')  
+
+insert into salas (sala_capacidad, sala_numero, sala_piso) values (100, 2, 1), (101,2, 2), (54, 1, 1), (69, 3, 1), (89, 4, 1), (150, 5, 1), (120, 6, 1), (80,7,1), (199,8,1), (35,9,1), (88,10,1), (45,1,2), (74,3,2), (99,4,2), (127,5,2), (108,6,2), (69,7,2), (25,8,2), (200,9,2), (250,10,2)
+
+select * from peliculas
+select * from genero
+select * from salas
+select * from proyecciones
+insert into proyecciones (proy_pelicula_id, proy_sala_id, proy_precio) values (1,1, 800), (2,2,800), (3,3,200), (4,4, 280), (5,5,98), (6,6,136), (7,7,1200), (8,8, 800), (9,9,500), (10,10,355), (11,11,600), (12,12,900), (13,13,955), (14,14,366), (15,15,844), (16,16,700), (17,17,200), (18,18,366), (19,19,150), (20,20,175), (21,21,350)
+
+insert into peliculas_genero (pege_peli_id,pege_gene_id) values (1,7), (2,2), (3,3), (4,4), (5,2), (6,2), (7,4), (8,2), (9,4), (10,5), (11,5), (12,2), (13,4), (14,2), (15,5), (16,5), (17,3), (18,3), (19,3), (20,3), (20,3)
+
+
+
+h)
+select sala_numero from salas
+where (sala_capacidad>=100)
+i)
+select peli_titulo, gene_nombre from peliculas
+inner join peliculas_genero on peli_id = pege_peli_id
+inner join genero on gene_id = pege_gene_id
+order by gene_nombre,
+j)
+select peli_titulo from peliculas
+inner join proyecciones on proy_pelicula_id = peli_id
+where proy_precio between 100 and 250
+order by peli_titulo,
+k)
+select peli_titulo from peliculas
+inner join proyecciones on proy_pelicula_id= peli_id
+inner join salas on sala_id= proy_sala_id
+where sala_numero = 3
+l)
