@@ -1,0 +1,37 @@
+create table alumnos(
+alum_id int identity (1,1) not null primary key,
+alum_nombre varchar (255) not null,
+alum_apellido varchar (255) not null,
+alum_dni varchar (255) not null,
+alum_edad int not null,
+alum_direccion varchar (255) not null,
+alum_email varchar (255) not null
+)
+insert into alumnos (alum_nombre, alum_apellido, alum_dni, alum_edad, alum_direccion, alum_email) values ('Aramis','Barello', '48.253.369', 21, 'Urquiza 132', 'aramis@gmail.com' ), ('Taiel', 'Fuentes', '58.152.165', 26, 'Alem 102', 'taiel@gmail.com'), ('Maria', 'Moreno','42.365.896', 21, 'Roca 123', 'Maria@gmail.com')
+
+create procedure sp_liste_alumnos
+as 
+begin
+select * from alumnos
+end
+
+create procedure sp_obtener_alumno(
+@id int
+)
+as
+begin
+select * from alumnos where alum_id = @id 
+end
+
+create procedure sp_nose_alumnos(
+@parametro varchar (255)
+)
+as
+begin
+select * from alumnos where alum_nombre=@parametro
+
+
+select movi_marca, movi_patente, movi_descripcion from moviles
+where movi_marca, movi_patente, movi_descripcion like r%
+
+
