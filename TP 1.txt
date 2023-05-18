@@ -256,3 +256,21 @@ inner join proyecciones on proy_pelicula_id= peli_id
 inner join salas on sala_id= proy_sala_id
 where sala_numero = 3
 l)
+select peli_id, peli_titulo, gene_nombre from peliculas
+inner join peliculas_genero on pege_peli_id = peli_id
+inner join genero on gene_id = pege_gene_id
+inner join proyecciones on proy_pelicula_id = peli_id
+inner join salas on sala_id = proy_sala_id
+where gene_nombre like 'c%' and sala_piso = 2
+order by gene_nombre,
+m)  
+select peli_titulo, gene_nombre from peliculas
+inner join peliculas_genero on pege_peli_id = peli_id
+inner join genero on gene_id = pege_gene_id
+inner join proyecciones on proy_pelicula_id = peli_id
+inner join salas on sala_id = proy_sala_id
+where sala_piso between 3 and 5 and (gene_nombre = 'Terror')
+n)
+select sala_capacidad, sala_piso, proy_precio from proyecciones
+inner join salas on sala_id = proy_sala_id
+where sala_capacidad <=500 and (sala_piso between 5 and 4 ) and (proy_precio >300 )
