@@ -1,0 +1,50 @@
+namespace hola_2
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		public MainForm()
+		{
+			//
+			// The InitializeComponent() call is required for Windows Forms designer support.
+			//
+			InitializeComponent();
+			
+			//
+			// TODO: Add constructor code after the InitializeComponent() call.
+			//
+		}
+		
+		void Rdb_verdeCheckedChanged(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void Btn_okClick(object sender, EventArgs e)
+		{
+			if(rdb_azul.Checked){
+				lbl_saludo.ForeColor=Color.Blue;
+			}
+			if(rdb_verde.Checked){
+				lbl_saludo.ForeColor=Color.Green;
+			}
+			if(rdb_rojo.Checked){
+				lbl_saludo.ForeColor=Color.Red;
+			}
+			lbl_saludo.Text=txt_nombre.Text;
+						
+		}
+		
+		void Lbl_saludoClick(object sender, EventArgs e)
+		{
+			
+		}
+		
+		void TxtTextChanged(object sender, EventArgs e)
+		{
+			
+		}
+	}
+}
