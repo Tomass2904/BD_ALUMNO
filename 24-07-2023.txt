@@ -1,0 +1,42 @@
+using System;
+
+namespace matriz
+{
+	class matrizces{
+		int[,] matriz;
+		public void leermatriz (){
+			matriz=new int [3,4];
+			for(int i=0; i<4;i++){
+				for (int j=0;j<3;j++){
+					Console.WriteLine("ingrese un numero");
+					matriz[j,i]=int.Parse(Console.ReadLine());
+						
+				}
+			}
+			
+		}
+		public void mostrarmatriz(){
+			for(int i=0; i<4;i++){
+				for (int j=0;j<3;j++){
+					Console.Write(matriz[j,i]+" | ");
+						
+				}
+				Console.WriteLine("");
+			}
+			Console.ReadKey();
+		}
+		
+	}
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			matrizces objmat = new matrizces();
+			objmat.leermatriz();
+			objmat.mostrarmatriz();
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
+}
