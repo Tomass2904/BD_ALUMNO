@@ -1,0 +1,35 @@
+
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace login_2._
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary>
+	public partial class MainForm : Form
+	{
+		entrada logeo;
+		public MainForm()
+		{
+			
+			InitializeComponent();
+			
+			
+		}
+		void Btn_inicioClick(object sender, EventArgs e)
+		{
+			if((txt_usuario.Text != "") &&(txt_contraseña.Text != "")){
+				if((txt_usuario.Text== "Admin")&&(txt_contraseña.Text == "pass")){
+					logeo = new entrada();
+					logeo.ShowDialog();
+					this.Hide();
+				}
+			}
+		}
+		
+		
+	}
+}
