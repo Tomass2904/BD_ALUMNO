@@ -1,0 +1,9 @@
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\bin\Debug\login 2.0.exe.config
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\bin\Debug\login 2.0.exe
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\bin\Debug\login 2.0.pdb
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\obj\Debug\login 2.0.csprojResolveAssemblyReference.cache
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\obj\Debug\login_2._.entrada.resources
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\obj\Debug\login 2.0.csproj.GenerateResource.Cache
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\obj\Debug\login 2.0.exe
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\obj\Debug\login 2.0.pdb
+C:\Users\PC.-01\Documents\SharpDevelop Projects\login 2.0\login 2.0\obj\Debug\login_2._.MainForm.resources
