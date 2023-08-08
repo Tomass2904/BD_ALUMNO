@@ -1,0 +1,11 @@
+class imagen {
+		public string [] imagen;
+		public void datos(){
+			imagen = new string[5];
+			imagen[0]=@"c:/imagen1.jpeg";
+			imagen[1]=@"c:/imagen2.png";
+			imagen[2]=@"c:/imagen3.jpg";
+			imagen[3]=@"c:/imagen4.jfif";
+			imagen[4]=@"c:/imagen5.jpg";
+		}
+	}
