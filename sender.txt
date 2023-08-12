@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace senderrrr
+{
+	/// <summary>
+	/// Description of MainForm.
+	/// </summary
+	/// 
+	public string [] vector ;
+//	class imagenes{
+//		public void datos(){
+//			vector = new string [5];
+//			vector[0]=@"e:/ben10.jpg";
+//			vector[1]=@"e:/c rie.jpg";
+//			vector[2]=@"e:/muerciegalo.jpg";
+//			vector[3]=@"e:/papa.jpg";
+//			vector[4]=@"e:/PERRO.jpg";
+//		}
+//	}
+	public partial class MainForm : Form
+	{
+		public MainForm()
+		{
+			
+			InitializeComponent();
+			
+			
+		}
+		
+		void Pic_1Click(object sender, EventArgs e)
+		{
+			pic_1.Image=Image.FromFile(@"e:/ben10.jpg");
+			pic_central.Image=pic_1.Image;
+		}
+		void func_click (object sender, EventArgs e){
+		pic_1.Image=Image.FromFile(@"e:/ben10.jpg");
+		pic_2.Image=Image.FromFile(@"e:/c rie.jpg");
+		pic_3.Image=Image.FromFile(@"e:/muerciegalo.jpg");
+		pic_4.Image=Image.FromFile(@"e:/papa.jpg");
+		pic_5.Image=Image.FromFile(@"e:/PERRO.jpg")
+			
+		}
+		
+		void MainFormLoad(object sender, EventArgs e)
+		{
+			vector = new string [5];
+			vector[0]=@"e:/ben10.jpg";
+			vector[1]=@"e:/c rie.jpg";
+			vector[2]=@"e:/muerciegalo.jpg";
+			vector[3]=@"e:/papa.jpg";
+			vector[4]=@"e:/PERRO.jpg";
+			
+		}
+		
+		
+	}
+}
