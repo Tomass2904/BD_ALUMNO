@@ -157,7 +157,7 @@ namespace atlas
 			// pic_central
 			// 
 			this.pic_central.BackColor = System.Drawing.Color.Transparent;
-			this.pic_central.Location = new System.Drawing.Point(12, 21);
+			this.pic_central.Location = new System.Drawing.Point(71, 12);
 			this.pic_central.Name = "pic_central";
 			this.pic_central.Size = new System.Drawing.Size(611, 415);
 			this.pic_central.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,6 +174,7 @@ namespace atlas
 			this.lbl_marte.Size = new System.Drawing.Size(100, 23);
 			this.lbl_marte.TabIndex = 9;
 			this.lbl_marte.Text = "Marte";
+			this.lbl_marte.Click += new System.EventHandler(this.func_click_label);
 			// 
 			// lbl_mercurio
 			// 
@@ -184,6 +185,7 @@ namespace atlas
 			this.lbl_mercurio.Size = new System.Drawing.Size(100, 23);
 			this.lbl_mercurio.TabIndex = 10;
 			this.lbl_mercurio.Text = "Mercurio";
+			this.lbl_mercurio.Click += new System.EventHandler(this.func_click_label);
 			// 
 			// lbl_urano
 			// 
@@ -194,6 +196,7 @@ namespace atlas
 			this.lbl_urano.Size = new System.Drawing.Size(100, 23);
 			this.lbl_urano.TabIndex = 11;
 			this.lbl_urano.Text = "Urano";
+			this.lbl_urano.Click += new System.EventHandler(this.func_click_label);
 			// 
 			// lbl_venus
 			// 
@@ -204,6 +207,7 @@ namespace atlas
 			this.lbl_venus.Size = new System.Drawing.Size(100, 23);
 			this.lbl_venus.TabIndex = 12;
 			this.lbl_venus.Text = "Venus";
+			this.lbl_venus.Click += new System.EventHandler(this.func_click_label);
 			// 
 			// lbl_Tierra
 			// 
@@ -214,6 +218,7 @@ namespace atlas
 			this.lbl_Tierra.Size = new System.Drawing.Size(100, 23);
 			this.lbl_Tierra.TabIndex = 13;
 			this.lbl_Tierra.Text = "Tierra";
+			this.lbl_Tierra.Click += new System.EventHandler(this.func_click_label);
 			// 
 			// lbl_saturno
 			// 
@@ -224,6 +229,7 @@ namespace atlas
 			this.lbl_saturno.Size = new System.Drawing.Size(100, 23);
 			this.lbl_saturno.TabIndex = 14;
 			this.lbl_saturno.Text = "Saturno";
+			this.lbl_saturno.Click += new System.EventHandler(this.func_click_label);
 			// 
 			// lbl_neptuno
 			// 
@@ -234,6 +240,7 @@ namespace atlas
 			this.lbl_neptuno.Size = new System.Drawing.Size(100, 23);
 			this.lbl_neptuno.TabIndex = 15;
 			this.lbl_neptuno.Text = "Neptuno";
+			this.lbl_neptuno.Click += new System.EventHandler(this.func_click_label);
 			// 
 			// lbl_jupiter
 			// 
@@ -244,14 +251,18 @@ namespace atlas
 			this.lbl_jupiter.Size = new System.Drawing.Size(100, 23);
 			this.lbl_jupiter.TabIndex = 16;
 			this.lbl_jupiter.Text = "Jupiter";
+			this.lbl_jupiter.Click += new System.EventHandler(this.func_click_label);
 			// 
 			// lbl_info
 			// 
 			this.lbl_info.BackColor = System.Drawing.Color.Transparent;
+			this.lbl_info.ForeColor = System.Drawing.Color.White;
 			this.lbl_info.Location = new System.Drawing.Point(651, 21);
 			this.lbl_info.Name = "lbl_info";
-			this.lbl_info.Size = new System.Drawing.Size(638, 415);
+			this.lbl_info.Size = new System.Drawing.Size(617, 415);
 			this.lbl_info.TabIndex = 17;
+			this.lbl_info.Text = "Descripcion";
+			this.lbl_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// MainForm
 			// 
@@ -259,7 +270,7 @@ namespace atlas
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.ClientSize = new System.Drawing.Size(1319, 637);
+			this.ClientSize = new System.Drawing.Size(1300, 653);
 			this.Controls.Add(this.lbl_info);
 			this.Controls.Add(this.lbl_jupiter);
 			this.Controls.Add(this.lbl_neptuno);
@@ -278,6 +289,7 @@ namespace atlas
 			this.Controls.Add(this.pic_7);
 			this.Controls.Add(this.pic_8);
 			this.Controls.Add(this.pic_5);
+			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Name = "MainForm";
 			this.Text = "atlas";
 			this.Load += new System.EventHandler(this.MainFormLoad);
@@ -291,6 +303,7 @@ namespace atlas
 			((System.ComponentModel.ISupportInitialize)(this.pic_4)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pic_central)).EndInit();
 			this.ResumeLayout(false);
+
 		}
 		private System.Windows.Forms.Label lbl_info;
 		private System.Windows.Forms.Label lbl_jupiter;
