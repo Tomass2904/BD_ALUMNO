@@ -1,0 +1,7 @@
+C:\Users\Lab-01\Documents\SharpDevelop Projects\EXAMEN\EXAMEN\bin\Debug\EXAMEN.exe
+C:\Users\Lab-01\Documents\SharpDevelop Projects\EXAMEN\EXAMEN\bin\Debug\EXAMEN.pdb
+C:\Users\Lab-01\Documents\SharpDevelop Projects\EXAMEN\EXAMEN\obj\Debug\EXAMEN.csprojResolveAssemblyReference.cache
+C:\Users\Lab-01\Documents\SharpDevelop Projects\EXAMEN\EXAMEN\obj\Debug\EXAMEN.MainForm.resources
+C:\Users\Lab-01\Documents\SharpDevelop Projects\EXAMEN\EXAMEN\obj\Debug\EXAMEN.csproj.GenerateResource.Cache
+C:\Users\Lab-01\Documents\SharpDevelop Projects\EXAMEN\EXAMEN\obj\Debug\EXAMEN.exe
+C:\Users\Lab-01\Documents\SharpDevelop Projects\EXAMEN\EXAMEN\obj\Debug\EXAMEN.pdb
