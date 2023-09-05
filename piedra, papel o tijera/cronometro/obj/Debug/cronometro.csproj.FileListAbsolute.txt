@@ -1,0 +1,14 @@
+C:\Users\Lab-01\Documents\SharpDevelop Projects\cronometro\cronometro\obj\Debug\cronometro.csprojResolveAssemblyReference.cache
+C:\Users\Lab-01\Documents\SharpDevelop Projects\cronometro\cronometro\obj\Debug\cronometro.MainForm.resources
+C:\Users\Lab-01\Documents\SharpDevelop Projects\cronometro\cronometro\obj\Debug\cronometro.csproj.GenerateResource.Cache
+C:\Users\Lab-01\Documents\SharpDevelop Projects\cronometro\cronometro\bin\Debug\cronometro.exe
+C:\Users\Lab-01\Documents\SharpDevelop Projects\cronometro\cronometro\bin\Debug\cronometro.pdb
+C:\Users\Lab-01\Documents\SharpDevelop Projects\cronometro\cronometro\obj\Debug\cronometro.exe
+C:\Users\Lab-01\Documents\SharpDevelop Projects\cronometro\cronometro\obj\Debug\cronometro.pdb
+C:\Users\Lab-01\Downloads\BD_ALUMNO-main\cronometro\cronometro\bin\Debug\cronometro.exe
+C:\Users\Lab-01\Downloads\BD_ALUMNO-main\cronometro\cronometro\bin\Debug\cronometro.pdb
+C:\Users\Lab-01\Downloads\BD_ALUMNO-main\cronometro\cronometro\obj\Debug\cronometro.csprojResolveAssemblyReference.cache
+C:\Users\Lab-01\Downloads\BD_ALUMNO-main\cronometro\cronometro\obj\Debug\cronometro.MainForm.resources
+C:\Users\Lab-01\Downloads\BD_ALUMNO-main\cronometro\cronometro\obj\Debug\cronometro.csproj.GenerateResource.Cache
+C:\Users\Lab-01\Downloads\BD_ALUMNO-main\cronometro\cronometro\obj\Debug\cronometro.exe
+C:\Users\Lab-01\Downloads\BD_ALUMNO-main\cronometro\cronometro\obj\Debug\cronometro.pdb
